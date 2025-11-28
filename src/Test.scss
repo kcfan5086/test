@@ -1,0 +1,12 @@
+img{
+    border-radius: 5px;
+    max-width: 100%;
+    border: 1px solid black;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;         /* 新增：文字置中 */
+}

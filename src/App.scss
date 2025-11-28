@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.tp {
+  display: flex;
+  flex-direction: column;
+}
+
+.op img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+img {
+  /* 斜切背景 */
+  background: linear-gradient(160deg, gray 60%, rgb(104, 104, 104) 40%);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+// 連結樣式
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(100, 157, 255);
+}
+// 取消圓形選取器
+input[type="radio"] {
+  display: none;
+}
+/* 選取後改變顏色 */
+input[name="size"]:checked + label {
+  background-color: #acacac;
+  color: white;
+}
+label {
+  padding: 10px 20px;
+  border: 2px solid #acacac;
+  cursor: pointer; //手型點擊指示器
+  user-select: none; // 文字無法選取
+  border-radius: 3px;
+  transition: background-color 0.2s;
+}
+input[name="preview"] + img {
+  cursor: pointer; //手型點擊指示器
+  transition: border 0.2s;
+}
