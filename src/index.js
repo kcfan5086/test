@@ -5,7 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Two from './ImageGallery.js';
 import One from './App.js';
-import Zero from './Test.js';
+import Zero from './home.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
