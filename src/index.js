@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Two from './ImageGallery.js';
 import One from './App.js';
 import Zero from './Test.js';
 
@@ -12,6 +13,7 @@ root.render(
     <Routes>
       <Route path="/" element={<Zero />} />
       <Route path="one" element={<One />} />
+      <Route path="two" element={<Two />} />
     </Routes>
   </BrowserRouter>
 );
