@@ -21,6 +21,14 @@ export default function Test() {
                     </Link>
                 </div>
             </div>
+            <div className='col-6'>
+                <div className='m-2'>
+                    <Link to="/three" className="link">
+                        資訊卡輪換
+                        <img src={"/picture/圖片輪換.jpeg"} />
+                    </Link>
+                </div>
+            </div>
         </div>
     );
 }

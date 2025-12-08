@@ -47,7 +47,7 @@ const ImageGallery = () => {
     if (!container || !thumb) return;
 
     // 計算要 scroll 的 left，讓 thumb 的中點與 container 中點對齊
-    const scrollLeft = thumb.offsetLeft - container.clientWidth / 2 + thumb.clientWidth / 2 - 232.5;
+    const scrollLeft = thumb.offsetLeft - container.clientWidth / 2 + thumb.clientWidth / 2 - 350;
     container.scrollTo({ left: scrollLeft, behavior: 'smooth' });
   }, [selectedIndex]);
 
