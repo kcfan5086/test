@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-container{
+    width: 100%;
+    background-color: rgb(176, 176, 176);
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .welcome{
+        width: 200px;
+        position: absolute;
+        left: 0;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .login-btn{
+        position: absolute;
+        right: 0;
+        &:hover{
+            background-color: rgb(134, 134, 134);
+        }
+    }
+    .menu:hover + .hide-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hide-menu{
+        display: none;
+        position: absolute;
+        top: 47px;
+        left: 0;
+        right: 0;//對absolute比用100VW好 想要對齊的話 (也包含置中)
+        background: linear-gradient(180deg,rgb(176, 176, 176),transparent);
+        &:hover{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .bg{
+        background-color: rgb(176, 176, 176);
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        left: calc(50% - 150px);
+        top: calc(50% - 100px);
+        border-radius: 5px;
+        padding: 10px;
+        .login{
+            text-align: center;
+            .title{
+                position: absolute;
+                border-radius: 5px 5px 0 0;
+                padding: 0 3px;
+                text-align: left;
+                left: 0;
+                top: 0;
+                width: 100%;
+                color: white;
+                background-color: rgb(142, 142, 142);
+            }
+            .close{
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                padding: 0;
+                right: -15px;
+                top: -15px;
+                border: none;
+                font-size: 20px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: scale(0.75);
+                background-color: rgb(200, 200, 200);
+                &:hover{
+                    background-color: rgb(134, 134, 134);
+                }
+            }
+            .flex{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                margin-top: 20px;
+                .Submit-btn{
+                    width: 75px;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 3px;
+                }
+            }
+        }
+    }
+}
+
+.menu-btn{
+    font-size: 18px;
+    font-weight: bold;
+    width: 175px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: transparent;
+    border: none;
+    &:hover{
+        background-color: rgb(134, 134, 134);
+    }
+}

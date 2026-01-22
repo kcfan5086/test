@@ -1,10 +1,12 @@
 import { Link } from 'react-router';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './home.scss';//..指的是上一層(預設路徑起始點為src)
+import Menu from './AccordionMenu.js';
 
 export default function Test() {
     return (
         <div className='row m-2'>
+            <Menu />
             <div className='col-6'>
                 <div className='m-2'>
                     <Link to="/one" className="link">
